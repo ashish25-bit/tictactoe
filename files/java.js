@@ -78,7 +78,7 @@ start.addEventListener('click' , () =>{
 })
 
 
-// for multiplayer
+// multiplayer
 
 function startGame(){
 	circleTurn = false
@@ -91,7 +91,6 @@ function startGame(){
 	setHover()
 	win_con.style.display = "none"
 }
-
 
 function handleClick(e){
 	const cell = e.target
@@ -124,7 +123,7 @@ function setHover(){
 		board.classList.add(x)
 }
 
-// for vs computer
+// vs computer
 
 function startGame2(){
 	array_index = [0,1,2,3,4,5,6,7,8]
@@ -157,7 +156,7 @@ function handleClick2(e){
 			compTurn = true
 		}
 	}
-	computerTurn()
+	setTimeout(computerTurn, 200)
 }
 
 function setHover2(){
